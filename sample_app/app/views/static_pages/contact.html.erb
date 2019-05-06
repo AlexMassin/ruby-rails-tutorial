@@ -1,0 +1,19 @@
+<% provide(:title, "Contact Us") %> 
+<html>
+<h1><%= yield(:title) %> </h1>
+
+<table>
+    <thead>
+        <th>Employees</th>
+    </thead>
+    <tbody>
+    <% @names.each do |name| %>
+      <tr>
+        <td><%= name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+</html>
