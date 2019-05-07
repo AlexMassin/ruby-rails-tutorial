@@ -1,7 +1,5 @@
 <% provide(:title, "Contact Us") %> 
-<html>
-<h1><%= yield(:title) %> </h1>
-
+<h1><%= full_title(yield(:title)) %></h1>
 <table>
     <thead>
         <th>Employees</th>
@@ -14,6 +12,3 @@
     <% end %>
   </tbody>
 </table>
-
-
-</html>
